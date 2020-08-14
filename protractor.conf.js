@@ -50,7 +50,7 @@ exports.config = {
         require: [ 'features/**/*.ts', ],
         'require-module':   [ 'ts-node/register'],
         'format': ["json:./reports/cucumber_report.json"],
-        tags:    ['@test'],
+        // tags:    ['@test'],
         strict:  false,
     },
 

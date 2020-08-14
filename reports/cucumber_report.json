@@ -1,0 +1,1778 @@
+[
+  {
+    "description": "    In order to use sjs2.0 + protractor with cucumber\n    As Automation analyst\n    I would like to see my registration successfully",
+    "keyword": "Feature",
+    "name": "register user by front",
+    "line": 1,
+    "id": "register-user-by-front",
+    "tags": [],
+    "uri": "features/register.feature",
+    "elements": [
+      {
+        "id": "register-user-by-front;validate-unregister-user",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Validate unregister user",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7555000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "he should see an error on the front Usuario o contraseña invalidos",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 333000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-happy-path",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Register Happy Path",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1889000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "he would register the form",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5580000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "visualizaria un registro exitoso",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2400000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "111290020",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4064000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 336000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 351000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2415000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "111290020",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbertacto@gmail.com",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4112000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El correo no coincide",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 349000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2440000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      "psstv",
+                      "111290020",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Nombre' es obligatorio.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 309000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 299000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2383000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "",
+                      "111290020",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4099000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Apellido' es obligatorio.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 319000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 311000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2441000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Cédula' es obligatorio.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 313000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 313000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2477000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "111290020",
+                      "",
+                      "cucumbercontacto@gmail.com",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4073000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El correo no coincide",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 332000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 332000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2408000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "111290020",
+                      "cucumbertacto@gmail.com",
+                      "",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4043000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El correo no coincide",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 320000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 316000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2350000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "111290020",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4049000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Contraseña' es obligatorio.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 349000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 315000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2417000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "111290020",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "6yhdghj",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4044000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El Contraseña no coincide",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 318000000,
+              "error_message": "AssertionError: Expected #actor would display the error message to equal 'El Contraseña no coincide'\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El Contraseña no coincide\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 330000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2387000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "111290020",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "6yhdghj",
+                      ""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4144000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Verificar contraseña' es obligatorio.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 331000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 335000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2372000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "1112  90020",
+                      "cucumbertacto@gmail.com",
+                      "cucumbertacto@gmail.com",
+                      "6yhdghj",
+                      "6yhdghj"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4073000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Cédula' deberia ir sin especios ni comas.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 313000000,
+              "error_message": "AssertionError: Expected #actor would display the error message to equal \"El campo 'Cédula' deberia ir sin especios ni comas.\"\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El campo 'Cédula' deberia ir sin especios ni comas.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 325000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 45,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2344000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "11.1290,0,20",
+                      "cucumbertacto@gmail.com",
+                      "cucumbertacto@gmail.com",
+                      "6yhdghj",
+                      "6yhdghj"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3994000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Cédula' deberia ir sin especios ni comas.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 311000000,
+              "error_message": "AssertionError: Expected #actor would display the error message to equal \"El campo 'Cédula' deberia ir sin especios ni comas.\"\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El campo 'Cédula' deberia ir sin especios ni comas.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 322000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2387000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "111290020",
+                      "cucumbertacto@gmail.com",
+                      "cucumbertacto@gmail.com",
+                      "6yhdghj",
+                      "6yhdghj"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4012000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module Para continuar debe aceptar los términos y condiciones.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 322000000,
+              "error_message": "AssertionError: Expected #actor would display the error message to equal 'Para continuar debe aceptar los términos y condiciones.'\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +Para continuar debe aceptar los términos y condiciones.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 315000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;value-analysis-&-equivalence-partitioning-and-others-exploratory-you-know",
+        "keyword": "Scenario",
+        "line": 61,
+        "name": "Value Analysis & Equivalence Partitioning and others exploratory you know",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 53,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2389000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "muchosGenteCreeQuePorqueCOpiaYpegaYaEsAutomationEstas",
+                      "muyEquivocadoAmigomioSorry",
+                      "111290020",
+                      "cucumbertacto@gmail.com",
+                      "cucumbertacto@gmail.com",
+                      "6yhdghj",
+                      "6yhdghj"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 54,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4120000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "he should see that error in the register module El campo 'Nombre' tiene una longitud no permitida.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 350000000,
+              "error_message": "AssertionError: Expected #actor would display the error message to equal \"El campo 'Nombre' tiene una longitud no permitida.\"\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El campo 'Nombre' tiene una longitud no permitida.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 317000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;value-analysis-&-equivalence-partitioning-and-others-exploratory-you-know",
+        "keyword": "Scenario",
+        "line": 62,
+        "name": "Value Analysis & Equivalence Partitioning and others exploratory you know",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 53,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2407000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "muchosGenteCreeQuePorqueCO",
+                      "genteQuePiensaQuePorqueManejaAzureDevEsIngenieroDeDevopsjaja",
+                      "111290020",
+                      "cucumbertacto@gmail.com",
+                      "cucumbertacto@gmail.com",
+                      "6yhdghj",
+                      "6yhdghj"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 54,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4146000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "he should see that error in the register module El campo 'Apellido' tiene una longitud no permitida.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 322000000,
+              "error_message": "AssertionError: Expected #actor would display the error message to equal \"El campo 'Apellido' tiene una longitud no permitida.\"\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El campo 'Apellido' tiene una longitud no permitida.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 304000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;value-analysis-&-equivalence-partitioning-and-others-exploratory-you-know",
+        "keyword": "Scenario",
+        "line": 63,
+        "name": "Value Analysis & Equivalence Partitioning and others exploratory you know",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 53,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2405000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "SELECT * FROM users WHERE name='user' and password='' or '1'='1'",
+                      "765678",
+                      "111290020",
+                      "cucumbertacto@gmail.com",
+                      "cucumbertacto@gmail.com",
+                      "SELECT * FROM users WHERE name='' or ' 1=1' and password='' or ' 1=1'",
+                      "6yhdghj"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 54,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4202000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "he should see that error in the register module plaf plaf, pumm.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 350000000,
+              "error_message": "AssertionError: Expected #actor would display the error message to equal 'plaf plaf, pumm.'\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +plaf plaf, pumm.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 319000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
