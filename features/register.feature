@@ -21,7 +21,7 @@ Feature: register user by front
 
 
     @test
-    Scenario Outline: Register user errors validation
+    Scenario Outline: Register user message errors validation
         When psstv starts session in the web application
         And he repeatedly completes the registration
             | name   | last name   | id   | mail   | confirmation email   | passwd   | confirmation passwd   |
