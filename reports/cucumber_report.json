@@ -24,7 +24,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 5000000
             }
           },
           {
@@ -37,7 +37,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7555000000
+              "duration": 4866000000
             }
           },
           {
@@ -50,7 +50,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 333000000
+              "duration": 381000000
             }
           },
           {
@@ -61,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 344000000
+              "duration": 360000000
             }
           }
         ]
@@ -82,7 +82,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 3000000
             }
           },
           {
@@ -95,7 +95,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1889000000
+              "duration": 2106000000
             }
           },
           {
@@ -108,7 +108,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5580000000
+              "duration": 5792000000
             }
           },
           {
@@ -128,7 +128,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 328000000
+              "duration": 367000000
             }
           }
         ]
@@ -167,7 +167,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2400000000
+              "duration": 2502000000
             }
           },
           {
@@ -207,7 +207,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4064000000
+              "duration": 4593000000
             }
           },
           {
@@ -220,7 +220,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 336000000
+              "duration": 367000000
             }
           },
           {
@@ -231,7 +231,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 351000000
+              "duration": 347000000
             }
           }
         ]
@@ -257,7 +257,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 3000000
             }
           },
           {
@@ -270,7 +270,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2415000000
+              "duration": 2588000000
             }
           },
           {
@@ -310,7 +310,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4112000000
+              "duration": 4751000000
             }
           },
           {
@@ -323,7 +323,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 349000000
+              "duration": 402000000
             }
           },
           {
@@ -334,7 +334,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 344000000
+              "duration": 354000000
             }
           }
         ]
@@ -343,315 +343,6 @@
         "id": "register-user-by-front;register-user-message-errors-validation",
         "keyword": "Scenario",
         "line": 35,
-        "name": "Register user message errors validation",
-        "tags": [
-          {
-            "name": "@test",
-            "line": 23
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "features/step_definitions/hooks.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 25,
-            "name": "psstv starts session in the web application",
-            "match": {
-              "location": "features/step_definitions/init.step.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2440000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "name",
-                      "last name",
-                      "id",
-                      "mail",
-                      "confirmation email",
-                      "passwd",
-                      "confirmation passwd"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "",
-                      "psstv",
-                      "111290020",
-                      "cucumbercontacto@gmail.com",
-                      "cucumbercontacto@gmail.com",
-                      "456789",
-                      "456789"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 26,
-            "name": "he repeatedly completes the registration",
-            "match": {
-              "location": "features/step_definitions/register.step.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4020000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "he should see that error in the register module El campo 'Nombre' es obligatorio.",
-            "match": {
-              "location": "features/step_definitions/register.step.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 309000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 299000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "register-user-by-front;register-user-message-errors-validation",
-        "keyword": "Scenario",
-        "line": 36,
-        "name": "Register user message errors validation",
-        "tags": [
-          {
-            "name": "@test",
-            "line": 23
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "features/step_definitions/hooks.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 25,
-            "name": "psstv starts session in the web application",
-            "match": {
-              "location": "features/step_definitions/init.step.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2383000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "name",
-                      "last name",
-                      "id",
-                      "mail",
-                      "confirmation email",
-                      "passwd",
-                      "confirmation passwd"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "juancho",
-                      "",
-                      "111290020",
-                      "cucumbercontacto@gmail.com",
-                      "cucumbercontacto@gmail.com",
-                      "456789",
-                      "456789"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 26,
-            "name": "he repeatedly completes the registration",
-            "match": {
-              "location": "features/step_definitions/register.step.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4099000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "he should see that error in the register module El campo 'Apellido' es obligatorio.",
-            "match": {
-              "location": "features/step_definitions/register.step.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 319000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 311000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "register-user-by-front;register-user-message-errors-validation",
-        "keyword": "Scenario",
-        "line": 37,
-        "name": "Register user message errors validation",
-        "tags": [
-          {
-            "name": "@test",
-            "line": 23
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "match": {
-              "location": "features/step_definitions/hooks.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 25,
-            "name": "psstv starts session in the web application",
-            "match": {
-              "location": "features/step_definitions/init.step.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2441000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "name",
-                      "last name",
-                      "id",
-                      "mail",
-                      "confirmation email",
-                      "passwd",
-                      "confirmation passwd"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "juancho",
-                      "psstv",
-                      "",
-                      "cucumbercontacto@gmail.com",
-                      "cucumbercontacto@gmail.com",
-                      "456789",
-                      "456789"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 26,
-            "name": "he repeatedly completes the registration",
-            "match": {
-              "location": "features/step_definitions/register.step.ts:15"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4173000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "he should see that error in the register module El campo 'Cédula' es obligatorio.",
-            "match": {
-              "location": "features/step_definitions/register.step.ts:20"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 313000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 313000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "register-user-by-front;register-user-message-errors-validation",
-        "keyword": "Scenario",
-        "line": 38,
         "name": "Register user message errors validation",
         "tags": [
           {
@@ -682,7 +373,316 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2477000000
+              "duration": 2609000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "",
+                      "psstv",
+                      "111290020",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4564000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Nombre' es obligatorio.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 388000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 394000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2699000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "",
+                      "111290020",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4626000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Apellido' es obligatorio.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 396000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 370000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2637000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "last name",
+                      "id",
+                      "mail",
+                      "confirmation email",
+                      "passwd",
+                      "confirmation passwd"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "juancho",
+                      "psstv",
+                      "",
+                      "cucumbercontacto@gmail.com",
+                      "cucumbercontacto@gmail.com",
+                      "456789",
+                      "456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 26,
+            "name": "he repeatedly completes the registration",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5004000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "he should see that error in the register module El campo 'Cédula' es obligatorio.",
+            "match": {
+              "location": "features/step_definitions/register.step.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 372000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/@serenity-js/cucumber/src/listeners/cucumber-4.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 358000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "register-user-by-front;register-user-message-errors-validation",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Register user message errors validation",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 23
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/step_definitions/hooks.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "psstv starts session in the web application",
+            "match": {
+              "location": "features/step_definitions/init.step.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2614000000
             }
           },
           {
@@ -722,7 +722,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4073000000
+              "duration": 4746000000
             }
           },
           {
@@ -735,7 +735,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 332000000
+              "duration": 398000000
             }
           },
           {
@@ -746,7 +746,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 332000000
+              "duration": 372000000
             }
           }
         ]
@@ -785,7 +785,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2408000000
+              "duration": 3227000000
             }
           },
           {
@@ -825,7 +825,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4043000000
+              "duration": 4691000000
             }
           },
           {
@@ -838,7 +838,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 320000000
+              "duration": 385000000
             }
           },
           {
@@ -849,7 +849,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 316000000
+              "duration": 375000000
             }
           }
         ]
@@ -875,7 +875,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           },
           {
@@ -888,7 +888,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2350000000
+              "duration": 2595000000
             }
           },
           {
@@ -928,7 +928,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4049000000
+              "duration": 4763000000
             }
           },
           {
@@ -941,7 +941,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 349000000
+              "duration": 371000000
             }
           },
           {
@@ -952,7 +952,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 315000000
+              "duration": 352000000
             }
           }
         ]
@@ -978,7 +978,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -991,7 +991,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2417000000
+              "duration": 2648000000
             }
           },
           {
@@ -1031,7 +1031,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4044000000
+              "duration": 4862000000
             }
           },
           {
@@ -1044,7 +1044,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 318000000,
+              "duration": 392000000,
               "error_message": "AssertionError: Expected #actor would display the error message to equal 'El Contraseña no coincide'\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El Contraseña no coincide\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
@@ -1056,7 +1056,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 330000000
+              "duration": 361000000
             }
           }
         ]
@@ -1082,7 +1082,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1095,7 +1095,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2387000000
+              "duration": 2666000000
             }
           },
           {
@@ -1135,7 +1135,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4144000000
+              "duration": 4775000000
             }
           },
           {
@@ -1148,7 +1148,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 331000000
+              "duration": 353000000
             }
           },
           {
@@ -1159,7 +1159,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 335000000
+              "duration": 362000000
             }
           }
         ]
@@ -1198,7 +1198,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2372000000
+              "duration": 2670000000
             }
           },
           {
@@ -1238,7 +1238,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4073000000
+              "duration": 4822000000
             }
           },
           {
@@ -1251,7 +1251,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 313000000,
+              "duration": 371000000,
               "error_message": "AssertionError: Expected #actor would display the error message to equal \"El campo 'Cédula' deberia ir sin especios ni comas.\"\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El campo 'Cédula' deberia ir sin especios ni comas.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
@@ -1263,7 +1263,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 325000000
+              "duration": 387000000
             }
           }
         ]
@@ -1302,7 +1302,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2344000000
+              "duration": 2571000000
             }
           },
           {
@@ -1342,7 +1342,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3994000000
+              "duration": 4823000000
             }
           },
           {
@@ -1355,7 +1355,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 311000000,
+              "duration": 402000000,
               "error_message": "AssertionError: Expected #actor would display the error message to equal \"El campo 'Cédula' deberia ir sin especios ni comas.\"\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El campo 'Cédula' deberia ir sin especios ni comas.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
@@ -1367,7 +1367,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 322000000
+              "duration": 364000000
             }
           }
         ]
@@ -1393,7 +1393,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1406,7 +1406,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2387000000
+              "duration": 2829000000
             }
           },
           {
@@ -1446,7 +1446,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4012000000
+              "duration": 4851000000
             }
           },
           {
@@ -1459,7 +1459,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 322000000,
+              "duration": 397000000,
               "error_message": "AssertionError: Expected #actor would display the error message to equal 'Para continuar debe aceptar los términos y condiciones.'\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +Para continuar debe aceptar los términos y condiciones.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
@@ -1471,7 +1471,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 315000000
+              "duration": 379000000
             }
           }
         ]
@@ -1492,7 +1492,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1505,7 +1505,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2389000000
+              "duration": 2693000000
             }
           },
           {
@@ -1545,7 +1545,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4120000000
+              "duration": 4797000000
             }
           },
           {
@@ -1558,7 +1558,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 350000000,
+              "duration": 377000000,
               "error_message": "AssertionError: Expected #actor would display the error message to equal \"El campo 'Nombre' tiene una longitud no permitida.\"\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El campo 'Nombre' tiene una longitud no permitida.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
@@ -1570,7 +1570,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 317000000
+              "duration": 371000000
             }
           }
         ]
@@ -1604,7 +1604,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2407000000
+              "duration": 2723000000
             }
           },
           {
@@ -1644,7 +1644,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4146000000
+              "duration": 4893000000
             }
           },
           {
@@ -1657,7 +1657,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 322000000,
+              "duration": 358000000,
               "error_message": "AssertionError: Expected #actor would display the error message to equal \"El campo 'Apellido' tiene una longitud no permitida.\"\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +El campo 'Apellido' tiene una longitud no permitida.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
@@ -1669,7 +1669,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 304000000
+              "duration": 364000000
             }
           }
         ]
@@ -1690,7 +1690,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 2000000
             }
           },
           {
@@ -1703,7 +1703,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2405000000
+              "duration": 2693000000
             }
           },
           {
@@ -1743,7 +1743,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4202000000
+              "duration": 5230000000
             }
           },
           {
@@ -1756,7 +1756,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 350000000,
+              "duration": 406000000,
               "error_message": "AssertionError: Expected #actor would display the error message to equal 'plaf plaf, pumm.'\n    + expected - actual\n\n    -Lo sentimos, el correo electrónico ingresado no está autorizado para el registro.\n    +plaf plaf, pumm.\n\n    at Ensure.asAssertionError (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:160:16)\n    at Ensure.errorForOutcome (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:147:21)\n    at MatchesObjectsWithCommonPrototype.transformation (/home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:100:36)\n    at MatchesObjectsWithCommonPrototype.MatcherRule.execute (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/rules/MatcherRule.ts:13:21)\n    at ObjectMatcher.PatternMatcher.else (/home/admin2k/code/github/e-one/node_modules/tiny-types/src/pattern-matching/PatternMatcher.ts:17:71)\n    at /home/admin2k/code/github/e-one/node_modules/@serenity-js/assertions/src/Ensure.ts:103:26\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
             }
           },
@@ -1768,7 +1768,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 319000000
+              "duration": 402000000
             }
           }
         ]
