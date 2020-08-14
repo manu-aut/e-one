@@ -1,0 +1,51 @@
+{
+  "name": "e-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "serenity-bdd update",
+    "clean": "rimraf target",
+    "test": "failsafe clean test:execute test:report",
+    "test:execute": "protractor ./protractor.conf.js",
+    "test:execute:wip": "protractor ./protractor.conf.js --cucumberOpts.tags=@wip",
+    "test:report": "serenity-bdd run --features ./features",
+    "wip": "failsafe clean test:execute:wip test:report",
+    "lint": "tslint --project tsconfig.json --format stylish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psstv/e-one.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psstv/e-one/issues"
+  },
+  "homepage": "https://github.com/psstv/e-one#readme",
+  "devDependencies": {
+    "@serenity-js/assertions": "^2.13.1",
+    "@serenity-js/console-reporter": "^2.13.1",
+    "@serenity-js/core": "^2.13.1",
+    "@serenity-js/cucumber": "^2.13.1",
+    "@serenity-js/protractor": "^2.13.1",
+    "@serenity-js/rest": "^2.13.1",
+    "@serenity-js/serenity-bdd": "^2.13.1",
+    "@types/cucumber": "^6.0.1",
+    "@types/node": "^14.0.27",
+    "chromedriver": "^84.0.1",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
+    "is-ci": "^2.0.0",
+    "npm-failsafe": "^0.4.1",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.2.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.3",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-microsoft-contrib": "^6.2.0",
+    "typescript": "^3.9.7"
+  }
+}
