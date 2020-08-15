@@ -57,10 +57,10 @@ Feature: register user by front
         Then he should see that error in the register module <message>
 
         Examples:
-            | name                                                             | last name                                                    | id        | mail                    | confirmation email      | passwd                                                                | confirmation passwd | message                                              |
-            | muchosGenteCreeQuePorqueCOpiaYpegaYaEsAutomationEstas            | muyEquivocadoAmigomioSorry                                   | 111290020 | cucumbertacto@gmail.com | cucumbertacto@gmail.com | 6yhdghj                                                               | 6yhdghj             | El campo 'Nombre' tiene una longitud no permitida.   |
-            | muchosGenteCreeQuePorqueCO                                       | genteQuePiensaQuePorqueManejaAzureDevEsIngenieroDeDevopsjaja | 111290020 | cucumbertacto@gmail.com | cucumbertacto@gmail.com | 6yhdghj                                                               | 6yhdghj             | El campo 'Apellido' tiene una longitud no permitida. |
-            | SELECT * FROM users WHERE name='user' and password='' or '1'='1' | 765678                                                       | 111290020 | cucumbertacto@gmail.com | cucumbertacto@gmail.com | SELECT * FROM users WHERE name='' or ' 1=1' and password='' or ' 1=1' | 6yhdghj             | plaf plaf, pumm.                                     |
+            | name                                                             | last name                        | id        | mail                    | confirmation email      | passwd                                                                | confirmation passwd | message                                              |
+            | 88fdf92da558800c8a432a8d9bfff34188fdf92da558800c8a432a8d9bfff341 | 88fdf92da558800c8a432a8d9bfff341 | 111290020 | cucumbertacto@gmail.com | cucumbertacto@gmail.com | 6yhdghj                                                               | 6yhdghj             | El campo 'Nombre' tiene una longitud no permitida.   |
+            | muchosGenteCreeQuePorqueCO                                       | 88fdf92da558800c8a432a8d9bfff341 | 111290020 | cucumbertacto@gmail.com | cucumbertacto@gmail.com | 6yhdghj                                                               | 6yhdghj             | El campo 'Apellido' tiene una longitud no permitida. |
+            | SELECT * FROM users WHERE name='user' and password='' or '1'='1' | 765678                           | 111290020 | cucumbertacto@gmail.com | cucumbertacto@gmail.com | SELECT * FROM users WHERE name='' or ' 1=1' and password='' or ' 1=1' | 6yhdghj             | plaf plaf, pumm.                                     |
 
 
 
