@@ -15,7 +15,8 @@ To use this project, you'll need:
 ```
 git clone https://github.com/psstv/e-one.git
 npm install 
-npm test                # executes the example tests and generates the report under ./target/site/serenity
+npm test                
+# executes the example tests and generates the report under ./target/site/serenity
 
 
 ## Generate report serenity
